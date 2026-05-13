@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
-TARGET="/usr/local/bin/rand"
+TARGET="$HOME/.local/bin/rand"
+
+mkdir -p "$(dirname "$TARGET")"
 
 echo "Installing 'rand' command to $TARGET..."
 
